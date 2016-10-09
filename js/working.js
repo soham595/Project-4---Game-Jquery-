@@ -4,6 +4,7 @@ $(function() {
   var table=$('table');
   var turn=$('.turn');
   var text=$('.text');
+  var win=0;
 
   $('td').click(function() {
     var td=$(this);
@@ -13,8 +14,8 @@ $(function() {
     }
     else {
       var ele=create(td);
-      var win;
-      td.addClass(ele);
+      if(!win)
+       td.addClass(ele);
       win=getResult(win, ele, table);
       if(win) {
         text.html('');
