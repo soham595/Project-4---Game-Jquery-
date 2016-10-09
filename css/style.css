@@ -36,7 +36,7 @@ td {
 	height: 45px;
 }
 
-td.cross::before {
+td.cross:after {
 	content: " x ";
 	margin-left: 23px;
 	color: #e05757;
@@ -44,7 +44,7 @@ td.cross::before {
 	font-size: 3em;
 }
 
-td.circle::before {
+td.circle:after {
   content: " o ";
 	margin-left: 23px;
   color: #008fbf;
