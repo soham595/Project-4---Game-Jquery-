@@ -1,0 +1,32 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body {
+	background-color: black;
+	color: white;
+  text-align: center;
+}
+
+.res {
+  margin-top: 20px;
+}
+
+table {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid white;
+  padding: 45px;
+}
+
+.c1 {
+	padding-right: 85px;
+}
+
+.c3 {
+	padding-left: 85px;
+}
