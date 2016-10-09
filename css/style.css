@@ -6,8 +6,14 @@ body {
   text-align: center;
 }
 
+h1 {
+	color: #e05757;
+}
+
 .res {
   margin-top: 20px;
+	background-color: #008fbf;
+	color: black;
 }
 
 table {
@@ -20,13 +26,38 @@ table {
 
 td {
   border: 1px solid white;
-  padding: 45px;
+  width: 60px;
+	height: 60px;
+	cursor: pointer;
 }
 
-.c1 {
-	padding-right: 85px;
+.c2 {
+	width: 45px;
+	height: 45px;
 }
 
-.c3 {
-	padding-left: 85px;
+td.cross::before {
+	content: " x ";
+	margin-left: 23px;
+	color: #e05757;
+	font-family: cursive;
+	font-size: 3em;
+}
+
+td.circle::before {
+  content: " o ";
+	margin-left: 23px;
+  color: #008fbf;
+	font-family: cursive;
+	font-size: 3em;
+}
+
+.text {
+	font-size: 1.2em;
+	font-family: cursive;
+}
+
+.turn {
+	font-size: 1.6em;
+	font-family: cursive;
 }
