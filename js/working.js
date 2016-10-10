@@ -6,6 +6,14 @@ $(function() {
   var text=$('.text');
   var win=0;
 
+  $('td').mouseover(function() {
+    $(this).css('background-color','grey');
+  })
+
+  $('td').mouseout(function() {
+    $(this).css('background-color','black');
+  })
+
   $('td').click(function() {
     var td=$(this);
     var state=getState(td);
@@ -20,6 +28,7 @@ $(function() {
       if(win) {
         text.html('');
         turn.html('PLAYER '+player+' HAS WON !!');
+        $('.res').css('visibility','visible');
       }
       else {
         if (player==1) {
@@ -39,6 +48,8 @@ $(function() {
     turn.html('Player 1 start the game.');
     text.html('');
     reset(table);
+    $(this).css('visibility','hidden');
+    win=0;
   })
   function getState(td) {
     if(td.hasClass('cross')||td.hasClass('circle'))
