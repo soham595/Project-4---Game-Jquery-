@@ -7,6 +7,7 @@ body {
 }
 
 h1 {
+	margin-top: 25px;
 	color: #e05757;
 }
 
@@ -14,6 +15,7 @@ h1 {
   margin-top: 20px;
 	background-color: #008fbf;
 	color: black;
+	visibility: hidden;
 }
 
 table {
@@ -26,30 +28,38 @@ table {
 
 td {
   border: 1px solid white;
-  width: 60px;
-	height: 60px;
-	cursor: pointer;
+  cursor: pointer;
+}
+
+.c1 {
+	width: 70px;
+	height: 70px;
 }
 
 .c2 {
 	width: 45px;
 	height: 45px;
+	padding-right: 30px;
+}
+
+.c3 {
+	width: 70px;
 }
 
 td.cross:after {
 	content: " x ";
-	margin-left: 23px;
+	margin-left: 21px;
 	color: #e05757;
 	font-family: cursive;
-	font-size: 3em;
+	font-size: 2.7em;
 }
 
 td.circle:after {
   content: " o ";
-	margin-left: 23px;
+	margin-left: 21px;
   color: #008fbf;
 	font-family: cursive;
-	font-size: 3em;
+	font-size: 2.7em;
 }
 
 .text {
