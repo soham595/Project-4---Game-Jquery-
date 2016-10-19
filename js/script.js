@@ -1,6 +1,10 @@
 $(function() {
 
-  
+  var player=1;
+  var table=$('table');
+  var turn=$('.turn');
+  var text=$('.text');
+  var win=0;
 
   $('td').mouseover(function() {
     $(this).css('background-color','grey');
@@ -19,7 +23,7 @@ $(function() {
     else {
       var ele=create(td);
       if(!win) {
-       td.addClass('cross').removeClass('check');
+       td.addClass(ele);
      }
       win=getResult(ele, table);
       if(win) {
@@ -36,13 +40,9 @@ $(function() {
         }
         text.html('');
         turn.html('Player turn - '+player);
-        var box= $('td');
-        var auto = Math.floor(Math.random() * box.length);
-        if(eq(auto).hasClass('cross')||eq(auto).hasClass('circle'))
-        box.eq(auto).addClass('circle');
       }
-  }
-})
+    }
+  })
 
   $('.res').click(function() {
     player=1;

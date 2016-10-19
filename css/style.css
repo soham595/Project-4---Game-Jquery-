@@ -21,7 +21,6 @@ h1 {
 table {
   margin-top: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
   border-collapse: collapse;
 }
@@ -46,7 +45,12 @@ td {
 	width: 70px;
 }
 
-td.cross:after {
+td.one::after {
+	content: "1";
+	color: black;
+}
+
+td.cross::after {
 	content: " x ";
 	margin-left: 21px;
 	color: #e05757;
@@ -54,7 +58,7 @@ td.cross:after {
 	font-size: 2.7em;
 }
 
-td.circle:after {
+td.circle::after {
   content: " o ";
 	margin-left: 21px;
   color: #008fbf;
